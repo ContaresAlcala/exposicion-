@@ -565,7 +565,13 @@ body::before {
 <!-- ===================== JS ORIGINAL ===================== -->
 <!-- ===================== JS NAVEGACIÓN ===================== -->
 <script>
+
+let lastScrollPosition = 0;
+
 function showImage(id, artist) {
+
+    // 👇 Guardamos la posición actual
+    lastScrollPosition = window.scrollY;
 
     if (window._stopAllAudio) {
         window._stopAllAudio();
@@ -580,8 +586,10 @@ function showImage(id, artist) {
     if (target) target.style.display = "block";
 
     document.querySelector(".floating-btn").style.display = "block";
-}
 
+    // Opcional: subir arriba para ver bien la obra
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 function goBack() {
 
     if (window._stopAllAudio) {
@@ -594,6 +602,12 @@ function goBack() {
     document.getElementById("gallery-title").style.display = "block";
 
     document.querySelector(".floating-btn").style.display = "none";
+
+    // 👇 Volver exactamente al punto anterior
+    window.scrollTo({
+        top: lastScrollPosition,
+        behavior: 'smooth'
+    });
 }
 </script>
 
@@ -699,6 +713,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 </body>
 </html>
+
 
 
 
