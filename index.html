@@ -943,21 +943,68 @@ body::before {
         Piezas de Rosa Cabeza
     </a>
 </div>
-
+<div class="full-width-text">"Interpretación libre"</div>
+<!-- CONTENEDOR HORIZONTAL -->
 <div class="image-container">
-    <div class="image-card" onclick="showImage('r1','rosa')">
-        <img src="rosa1.jpg">
+    <div class="image-card" onclick="showImage('r1')">
+        <img src="rosafoto1.jpeg">
+    </div>
+     <div class="image-card" onclick="showImage('r2')">
+        <img src="rosafoto2.jpeg">
     </div>
 </div>
 
+<!-- VISTAS INDIVIDUALES -->
 <div id="image-view-r1" class="image-view">
-    <img src="rosa1.jpg" style="width:80%; max-width:600px;">
-    <p><strong><em>Título obra Rosa</em></strong></p>
+    <img src="rosafoto1.jpeg" style="width:80%; max-width:600px;">
+  <p>Interpretación libre. Acrílico sobre lienzo.</p>
+    <p><strong><em>“Alcalá I" (50x50cm)
+</em></strong></p>
+  
     <div class="audio-control" data-audio="rosa1.mp3">
-        <button class="btn-audio"><span class="audio-icon"></span>Explicación de la obra</button>
+        <button class="btn-audio">
+            <span class="audio-icon"></span> Explicación de la obra
+        </button>
     </div>
 </div>
+<div id="image-view-r1" class="image-view">
+    <img src="rosafoto2.jpeg" style="width:80%; max-width:600px;">
+  <p>Interpretación libre. Acrílico sobre lienzo.</p>
+    <p><strong><em>“Alcalá II" (50x50cm)
+</em></strong></p>
+  
+    <div class="audio-control" data-audio="rosa1.mp3">
+        <button class="btn-audio">
+            <span class="audio-icon"></span> Explicación de la obra
+        </button>
+    </div>
+</div>
+  <!-- ======================================================
+     SILVIA CARACENA
+====================================================== -->
+<div class="full-width-text">
+    <a href="silvia.png" target="_blank" style="text-decoration: underline; color: #ff4500;">
+        Piezas de Silvia Caracena
+    </a>
+</div>
+<div class="full-width-text">"Archivo Quijano"</div>
+<!-- CONTENEDOR HORIZONTAL -->
+<div class="image-container">
+    <div class="image-card" onclick="showImage('s1')">
+        <img src="silviafoto1.jpeg">
+    </div>
+   
+</div>
 
+<!-- VISTAS INDIVIDUALES -->
+<div id="image-view-s1" class="image-view">
+    <img src="silviafoto1.jpeg" style="width:80%; max-width:600px;">
+  <p>Naturaleza fértil. acuarela y tinta.</p>
+    <p><strong><em>“CAlcalá en B/N. (21x15cm)” (40x50cm)
+</em></strong></p>
+  
+
+</div>
 
 
 <button class="floating-btn" onclick="goBack()">Volver al inicio</button>
@@ -1113,6 +1160,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 </body>
 </html>
+
 
 
 
